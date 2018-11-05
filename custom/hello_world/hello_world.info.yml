@@ -1,0 +1,19 @@
+name: Hello World Module
+description: A tutorial for modules creating an admin page and a custom block with form elements.
+#The name and description keys provide the text that is shown on the module administration page
+package: Custom
+#the package key allows you to group like modules together. Core, for example,
+#uses package: Core to group all of the modules provided with Drupal 8 together,
+#likewise you might use package: Custom to group all of your projects custom
+#modules together making them easier to locate and enable.
+type: module
+#The type key, which is new in Drupal 8, indicates the type of extension, e.g. module, theme or profile.
+
+#For modules hosted on drupal.org, the version number will be filled in by the
+#packaging script, you should not specify it manually, but leave out the version line entirely.
+core: 8.x
+#The core key specifies the version of Drupal core that your module is compatible with.
+#The three keys, name, type and core are required.
+
+#check https://www.drupal.org/node/2000204 for more keys like "dependencies"
+#(list of other modules your module needs in order to work), and their syntax.

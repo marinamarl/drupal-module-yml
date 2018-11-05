@@ -1,0 +1,17 @@
+hello_world.admin:
+  title: 'Hello module settings'
+  description: 'example of how to make an admin settings page link'
+  #just reserving a name space & description
+  parent: system.admin_config_development
+  #parent line describes the parent link for the menu. In other words, the menu
+  # link will be created under admin, config, development.
+  route_name: hello_world.content
+  #this will add a link to the path referenced in
+  #hello_world.content (in routing.yml)
+  weight: 100
+#After you have cleared the cache, you will find a menu link
+#"Hello module settings" in the Development section of Configuration page.
+# On clicking the link, the hello_world module will be called.
+
+#ps. you can link things in other ways too. (like with urls etc). For this,
+#check out https://www.drupal.org/docs/8/creating-custom-modules/add-a-menu-link

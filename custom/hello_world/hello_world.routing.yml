@@ -1,0 +1,25 @@
+hello_world.content:
+  path: '/hello'
+  #the path of the module. example: DrupalVille/hello.
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloController::content'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+#Note that the space you reserve in the routing table for your module, the
+#"hello_world" in hello_world.content on the first line, is not required to be
+#the machine name you chose for your module. However, in order to be consistent
+# across your routing and menu files, it is a best practice. The full entry name,
+#hello_world.content, will be used in the next section, when adding a menu link,
+#to wire that link into this routing table entry.
+
+#If you already have your module activated you will need to clear your site's
+#cache from the user interface at admin/config/development/performance or using
+#drush (drush cache-rebuild or drush cr). If not, go ahead and activate it.
+
+#Now navigate to the front page of your site, and then add /hello to your site's
+#url in the address bar. You should see a page with the "Hello, World!" message on it.
+
+#Please note that you have to put proper indentation for the module.routing.yml
+#file else you might encounter issue with drupal cache clearing.

@@ -1,0 +1,18 @@
+# For example the configuration management system takes care of creating and
+# managing content types. You can ship a content type with your module by creating 
+# a properly named and structured configuration file.
+
+type: hello_world
+name: Hello world
+description: 'Use <em>example</em> content to get to Drupal 8 development better.'
+help: ''
+new_revision: false
+display_submitted: true
+preview_mode: 1
+status: true
+langcode: en
+
+# Exporting configuration: uuid: 626187e6-2176-4a73-8900-c0912580e4a1 < < Remove this!
+# langcode: en
+# You can generate these files by exporting the configuration in Configuration >
+# Development > Configuration synchronization.
